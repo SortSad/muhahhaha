@@ -1,1 +1,7 @@
-
+if game.PlaceId == 17167990958 then 
+loadstring(game:HttpGet("https://raw.githubusercontent.com/SortSad/TDpro/main/Dc2"))() 
+if game.PlaceId == 17167990958 then 
+loadstring(game:HttpGet("https://raw.githubusercontent.com/SortSad/TDpro/main/fps"))() 
+if game.PlaceId == 17167990958 then 
+loadstring(game:HttpGet("https://raw.githubusercontent.com/SortSad/TDpro/main/fps"))() 
+end
