@@ -1,3 +1,7 @@
+getgenv().ImportMacro = {
+    "https://cdn.discordapp.com/attachments/1148225121115459586/1289277081464606812/mix.json?ex=66f83c59&is=66f6ead9&hm=872eeb5a67720f26a7af1c4422d126bc9794b63982ef08a15e27c73348216339&",
+    "https://cdn.discordapp.com/attachments/1148225121115459586/1289277082517504031/inf.json?ex=66f83c5a&is=66f6eada&hm=118b6d585703db8d2a41fae5196bf55f84581e149c72e1ced9c129022e957a58&",
+}
 getgenv().Config = {
     ["AutoVoteDifficulty"] = false,
     ["AutoSave"] = true,
@@ -19,8 +23,5 @@ getgenv().Config = {
     ["BoostFPS"] = false,
     ["AutoRejoin"] = true
 }
-getgenv().ImportMacro = {
-    "https://cdn.discordapp.com/attachments/1148225121115459586/1289277081464606812/mix.json?ex=66f83c59&is=66f6ead9&hm=872eeb5a67720f26a7af1c4422d126bc9794b63982ef08a15e27c73348216339&",
-    "https://cdn.discordapp.com/attachments/1148225121115459586/1289277082517504031/inf.json?ex=66f83c5a&is=66f6eada&hm=118b6d585703db8d2a41fae5196bf55f84581e149c72e1ced9c129022e957a58&",
-}
+
 loadstring(game:HttpGet("https://nousigi.com/loader.lua"))() 
