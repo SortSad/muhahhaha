@@ -7,18 +7,18 @@ getgenv().Config = {
     ["SellWave"] = 32,
     ["AutoSkip"] = true,
     ["SetGameSpeed"] = true,
-    ["AutoJoinMatch"] = false,
+    ["AutoJoinMatch"] = true,
     ["TPLobbyIfPlayer"] = true,
     ["GameSpeed"] = 2,
     ["AutoSellOW"] = true,
     ["IgnoreMacroTiming"] = true,
-    ["SelectMacro"] = "inf",
-    ["AutoJoinEndless"] = true,
+    ["SelectMacro"] = "mix",
+    ["AutoJoinEndless"] = false,
     ["PlayMacro"] = true,
     ["SelectMap"] = "TimeVoid",
     ["BlackScreen"] = false,
     ["BoostFPS"] = false,
     ["AutoRejoin"] = true
 }
-
+getgenv().Key = "ke6982796efa8c52a555e7d9 "
 loadstring(game:HttpGet("https://nousigi.com/loader.lua"))() 
