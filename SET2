@@ -1,7 +1,7 @@
 getgenv().Config = {
     ["AutoVoteDifficulty"] = false,
     ["AutoSave"] = true,
-    ["AutoReplay"] = true,
+    ["AutoReplay"] = false,
     ["DelayReplay"] = 5,
     ["SellWave"] = 32,
     ["AutoSkip"] = true,
