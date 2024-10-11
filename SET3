@@ -13,13 +13,13 @@ getgenv().Config = {
 	["IgnoreMacroTiming"] = true,
 	["SelectMacro"] = "infV1",
 	["AutoRejoin"] = true,
-	["AutoJoinEndless"] = false,
+	["AutoJoinEndless"] = true,
 	["PlayMacro"] = true,
 	["AutoReplay"] = false,
 	["SelectMap"] = "TimeVoid",
 	["OpenCrate"] = "Clock Crate",
 	["BoostFPS"] = false,
-	["AutoOpenCrate"] = true
+	["AutoOpenCrate"] = false
 }
 getgenv().Key = "k8dcc1c524c0d8ed51719f9e"
 repeat wait()spawn(function()loadstring(game:HttpGet("https://nousigi.com/loader.lua"))()end)wait(5)until Joebiden
