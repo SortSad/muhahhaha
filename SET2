@@ -6,20 +6,20 @@ getgenv().Config = {
 	["SellWave"] = 32,
 	["AutoSkip"] = true,
 	["SetGameSpeed"] = true,
-	["AutoJoinMatch"] = false,
+	["AutoJoinMatch"] = true,
 	["TPLobbyIfPlayer"] = true,
 	["GameSpeed"] = 2,
 	["AutoSellOW"] = true,
 	["IgnoreMacroTiming"] = true,
 	["SelectMacro"] = "infV1",
 	["AutoRejoin"] = true,
-	["AutoJoinEndless"] = true,
+	["AutoJoinEndless"] = false,
 	["PlayMacro"] = true,
 	["AutoReplay"] = false,
 	["SelectMap"] = "TimeVoid",
 	["OpenCrate"] = "Clock Crate",
 	["BoostFPS"] = false,
-	["AutoOpenCrate"] = false
+	["AutoOpenCrate"] = true
 }
 getgenv().Key = "ke6982796efa8c52a555e7d9"
 repeat wait()spawn(function()loadstring(game:HttpGet("https://nousigi.com/loader.lua"))()end)wait(5)until Joebiden
