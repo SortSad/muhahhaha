@@ -1,6 +1,6 @@
 getgenv().Config = {
-	["AutoVoteDifficulty"] = false,
-	["AutoSave"] = true,
+	["AutoVoteDifficulty"] = true,
+	["AutoSave"] = false,
 	["BlackScreen"] = false,
 	["DelayReplay"] = 5,
 	["SellWave"] = 32,
@@ -12,14 +12,15 @@ getgenv().Config = {
 	["AutoSellOW"] = false,
 	["IgnoreMacroTiming"] = true,
 	["SelectMacro"] = "Halloween4",
+	["AutoOpenCrate"] = false,
 	["AutoRejoin"] = true,
-	["AutoJoinEndless"] = false,
 	["PlayMacro"] = true,
-	["AutoReplay"] = true,
+	["AutoJoinEndless"] = false,
 	["SelectMap"] = "Halloween",
 	["OpenCrate"] = "Clock Crate",
-	["BoostFPS"] = false,
-	["AutoOpenCrate"] = true
+	["BoostFPS"] = true,
+	["AutoReplay"] = true,
+	["SelectDifficulty"] = "Hard"
 }
 getgenv().Key = "k8dcc1c524c0d8ed51719f9e"
 repeat wait()spawn(function()loadstring(game:HttpGet("https://nousigi.com/loader.lua"))()end)wait(5)until Joebiden
