@@ -1,25 +1,8 @@
-getgenv().Config = {
-	["AutoVoteDifficulty"] = false,
-	["AutoSave"] = true,
-	["BlackScreen"] = false,
-	["DelayReplay"] = 5,
-	["SellWave"] = 32,
-	["AutoSkip"] = true,
-	["SetGameSpeed"] = true,
-	["AutoJoinMatch"] = true,
-	["TPLobbyIfPlayer"] = true,
-	["GameSpeed"] = 2,
-	["AutoSellOW"] = false,
-	["IgnoreMacroTiming"] = true,
-	["SelectMacro"] = "Halloween4",
-	["AutoRejoin"] = true,
-	["AutoJoinEndless"] = false,
-	["PlayMacro"] = true,
-	["AutoReplay"] = true,
-	["SelectMap"] = "Halloween",
-	["OpenCrate"] = "Clock Crate",
-	["BoostFPS"] = false,
-	["AutoOpenCrate"] = true
-}
-getgenv().Key = "kd2415278d2a026df7ecadb4"
-repeat wait()spawn(function()loadstring(game:HttpGet("https://nousigi.com/loader.lua"))()end)wait(5)until Joebiden
+_G.PartyOwner = false
+_G.RemoveEffect = true
+_G.Weapon = "DevilFruit"
+_G.AutoStoreItems = true
+_G.Ignore = {"Shiny Banana","Orb Dungeon"}
+_G.AutoDungeon = true
+_G.Password = "Sort-Rock-Fruit-Dungeon"
+loadstring(game:HttpGet('https://raw.githubusercontent.com/DevSoGod/All/main/RF-D'))()
