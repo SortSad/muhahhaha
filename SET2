@@ -1,7 +1,6 @@
 _G.PartyOwner = true
 _G.AutoEquipWeapon = true
 _G.RemoveEffect = true
-_G.Weapon = "DevilFruit"
 _G.AutoStoreItems = true
 _G.Ignore = {"Shiny Banana"}
 _G.AutoDungeon = false
