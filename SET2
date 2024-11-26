@@ -3,7 +3,7 @@ _G.AutoEquipWeapon = true
 _G.RemoveEffect = true
 _G.AutoStoreItems = true
 _G.Ignore = {"Shiny Banana"}
-_G.AutoDungeon = false
+_G.AutoDungeon = true
 _G.AutoSkill = true
 _G.Password = "Sort-Rock-Fruit-Dungeon"
 loadstring(game:HttpGet('https://raw.githubusercontent.com/DevSoGod/All/main/RF-D'))()
