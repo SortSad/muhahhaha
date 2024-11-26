@@ -1,1 +1,4 @@
+_G.Key = "ALLMAP-HM0A7-WQZOC" --You have 29 d, 23 h, 54 m, and 9 s left.
 
+_G.DiscordId = "794926742670147584"
+loadstring(game:HttpGet("https://raw.githubusercontent.com/SecretReal/Secret/refs/heads/main/"..game.GameId))();
