@@ -5,7 +5,7 @@ _G.Dungeon_Config = {
     ["Weapon Use"] = {"Sword","DevilFruit"},
     ["Automatic SKILL"] = false,
     ["Select SKILL"] = {"z","x","c","v","f"},
-    ["Select Accessory"] = "WhySoSerious",
+}
 _G.Key = "ALLMAP-MRM30-U0KV6" --You have 1 d, 23 h, 59 m, and 53 s left.
 _G.DiscordId = "597362903582244883"
 loadstring(game:HttpGet("https://raw.githubusercontent.com/SecretReal/Secret/refs/heads/main/"..game.GameId))();
