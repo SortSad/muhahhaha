@@ -3,7 +3,7 @@ _G.AutoSkill = false
 _G.AutoBoss = true
 _G.RemoveEffect = true
 _G.PartyOwner = false --true = จะเป็นตัวสร้าง party false = ตัวรับ party
-_G.AutoStoreItems = true
+_G.AutoStoreItems = false
 _G.WebhookLink = "https://discord.com/api/webhooks/1282396686932770826/PyV7szp_WRD5CCkFIPYvjFNJDtYlmQDmGV7TyVPzjeq6zBmE7amtzmMcVqNuaQlpKV0m"
 _G.Password = "Sort-Rock-Fruit-NUANG"
 loadstring(game:HttpGet('https://raw.githubusercontent.com/DevSoGod/All/main/RF-N'))()
