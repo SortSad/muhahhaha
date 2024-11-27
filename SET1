@@ -1,5 +1,3 @@
-_G.Weapon = "DevilFruit" -- DevilFruit,Sword,Melee
-_G.AutoSkill = false
 _G.AutoBoss = true
 _G.RemoveEffect = true
 _G.PartyOwner = false --true = จะเป็นตัวสร้าง party false = ตัวรับ party
