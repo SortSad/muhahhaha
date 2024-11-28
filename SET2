@@ -1,9 +1,11 @@
-_G.PartyOwner = true
-_G.RemoveEffect = true
-_G.AutoEquipWeapon = true
-_G.AutoStoreItems = true
-_G.Ignore = {"Shiny Banana"}
-_G.AutoDungeon = false
 _G.AutoSkill = true
-_G.Password = "Sort-Rock-Fruit-Dungeons"
+_G.AutoStoreItems = true
+_G.KeepItems = {"Shiny Banana"}
+_G.RemoveEffect = true
+_G.InviteParty = true
+_G.AcceptParty = true
+_G.AutoNUANG = true
+_G.AutoDungeon = true
+_G.ConfigMode = true --- false เปิดโหมดเก
+_G.Password = "พี่หน่วงแบนผมทำไม"
 loadstring(game:HttpGet('https://raw.githubusercontent.com/DevSoGod/All/main/RF-D'))()
