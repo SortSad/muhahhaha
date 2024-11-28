@@ -1,1 +1,9 @@
-
+_G.PartyOwner = false
+_G.RemoveEffect = true
+_G.AutoEquipWeapon = true
+_G.AutoStoreItems = true
+_G.Ignore = {"Shiny Banana"}
+_G.AutoDungeon = false
+_G.AutoSkill = true
+_G.Password = "Sort-Rock-Fruit-Dungeons"
+loadstring(game:HttpGet('https://raw.githubusercontent.com/DevSoGod/All/main/RF-D'))()
