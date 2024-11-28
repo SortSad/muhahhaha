@@ -1,3 +1,4 @@
+_G.AutoEquipWeapon = true
 _G.AutoSkill = true
 _G.AutoStoreItems = true
 _G.KeepItems = {"Shiny Banana"}
