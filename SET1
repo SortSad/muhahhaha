@@ -2,7 +2,7 @@ getgenv().Config = {
     -- Settings --
     ["Distance Farm"] = 29,
     ["Select Mode"] = "Upper",
-    ["Weapon Use"] = {"Melee","Sword","DevilFruit","Special"},
+    ["Weapon Use"] = {},
     ["Automatic SKILL"] = false,
     ["Select SKILL"] = {"z","x","c","v","f"},
     ["Select Accessory"] = "WhySoSerious",
