@@ -1,8 +1,9 @@
+_G.AutoEquipWeapon = true
 _G.AutoSkill = true
 _G.AutoStoreItems = true
 _G.KeepItems = {"Shiny Banana"}
 _G.RemoveEffect = true
-_G.InviteParty = false
+_G.InviteParty = true
 _G.AcceptParty = true
 _G.AutoNUANG = true
 _G.AutoDungeon = true
