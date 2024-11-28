@@ -1,1 +1,24 @@
+while wait(1) do
+    local args = {
+        [1] = "UpStats",
+        [2] = "DevilFruit",
+        [3] = 500
+    }
 
+    game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("System"):FireServer(unpack(args))
+    local args = {
+        [1] = "UpStats",
+        [2] = "Defense",
+        [3] = 500
+    }
+
+    game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("System"):FireServer(unpack(args))
+
+  local args = {
+        [1] = "UpStats",
+        [2] = "Sword",
+        [3] = 500
+    }
+
+    game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("System"):FireServer(unpack(args))
+end
