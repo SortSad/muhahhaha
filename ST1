@@ -1,3 +1,19 @@
+getgenv()._env = {
+    -- Setting -- 
+    ['Distance'] = 29,
+    ['Method'] = "Upper",
+    ['Weapon'] = {"Melee","Sword","DevilFruit","Special"},
+    ['Select_Accessory'] = "WhySoSerious",
+    ['Select_Item_Store'] = {"Orb Dungeon","Spirit Curse"},
+    ['Automatic_Store_Item'] = true,
+    ["Automatic Create Party + Invite"] = true,
+    ["Automatic Accept"] = true,
+    ["Url Webhook Office Chair"] = "",
+    -- Event -- 
+    ['Automatic Turbo Granny'] = true,
+    ['Automatic_Fully_NUANG'] = true,
+    ['Automatic_Fully_Dungeon'] = true,
+}
 _G.Key = "ALLMAP-HM0A7-WQZOC" --You have 29 d, 23 h, 54 m, and 9 s left.
 
 _G.DiscordId = "794926742670147584"
