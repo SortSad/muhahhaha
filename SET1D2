@@ -12,7 +12,7 @@ getgenv()._env = {
     -- Event -- 
     ['Automatic Turbo Granny'] = true,
     ['Automatic_Fully_NUANG'] = false,
-    ['Automatic_Fully_Dungeon'] = false,
+    ['Automatic_Fully_Dungeon'] = true,
 }
 _G.Key = "ALLMAP-HM0A7-WQZOC" --You have 29 d, 23 h, 54 m, and 9 s left.
 
