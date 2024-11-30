@@ -1,7 +1,7 @@
 _G.AutoEquipWeapon = true
 _G.AutoSkill = true
 _G.AutoStoreItems = true
-_G.KeepItems = {"Shiny Banana"}
+_G.KeepItems = {"Spirit Curse"}
 _G.RemoveEffect = true
 _G.InviteParty = false
 _G.AcceptParty = true
