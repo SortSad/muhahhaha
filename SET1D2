@@ -2,7 +2,7 @@ getgenv()._env = {
     -- Setting -- 
     ['Distance'] = 25,
     ['Method'] = "Upper",
-    ['Weapon'] = {"Melee","Sword","DevilFruit","Special"},
+    ['Weapon'] = {},
     ['Select_Accessory'] = "WhySoSerious",
     ['Select_Item_Store'] = {},
     ['Automatic_Store_Item'] = false,
