@@ -16,5 +16,5 @@ getgenv()._env = {
 }
 _G.Key = "ALLMAP-CQQYM-4175T" --You have 29 d, 23 h, 54 m, and 9 s left.
 
-_G.DiscordId = "794926742670147584"
+_G.DiscordId = "597362903582244883"
 loadstring(game:HttpGet("https://raw.githubusercontent.com/SecretReal/Secret/refs/heads/main/"..game.GameId))();
