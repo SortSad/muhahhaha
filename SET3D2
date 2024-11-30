@@ -6,7 +6,7 @@ _G.RemoveEffect = true
 _G.InviteParty = false
 _G.AcceptParty = true
 _G.AutoNUANG = true
-_G.AutoDungeon = true
+_G.AutoDungeon = false
 _G.ConfigMode = true --- false เปิดโหมดเก
 _G.Password = "พี่หน่วงแบนผมทำไม"
 loadstring(game:HttpGet('https://raw.githubusercontent.com/DevSoGod/All/main/RF-D'))()
