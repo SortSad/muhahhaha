@@ -3,6 +3,7 @@ spawn(function()
         while task.wait() do
             pcall(function()
                 _G.InviteParty = true
+                _G.KeepItems = {"Spirit Curse","Orb Dungeon"}
             end)
         end
     end)
