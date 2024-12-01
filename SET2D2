@@ -1,2 +1,11 @@
+spawn(function()
+    pcall(function()
+        while task.wait() do
+            pcall(function()
+                _G.InviteParty = true
+            end)
+        end
+    end)
+end)
 _G.Password = "พี่หน่วงแบนผมทำไม"
 loadstring(game:HttpGet('https://raw.githubusercontent.com/DevSoGod/All/main/RF-D'))()
