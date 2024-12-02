@@ -1,12 +1,20 @@
-spawn(function()
-    pcall(function()
-        while task.wait() do
-            pcall(function()
-                _G.InviteParty = true
-                _G.KeepItems = {"Spirit Curse","Orb Dungeon"}
-            end)
-        end
-    end)
-end)
 _G.Password = "พี่หน่วงแบนผมทำไม"
+spawn(function()
+    while task.wait() do
+        _G.ItemsTrade = {"Orb Dungeon","Phone","Kfc Bag","Cursed Banana","Spirit Curse","Frog","Office Chair","Orb Broken","Orb Atomic","Finger Sukuna","Turbo Cat"}
+        _G.AutoTrade = true
+        _G.Stat = {"DevilFruit","Defense"}
+        _G.AutoStat = true
+        _G.AutoRandom = false
+        _G.AutoEquipWeapon = true
+        _G.AutoSkill = true
+        _G.AutoNUANG = true
+        _G.AutoDungeon = true
+        _G.KeepItems = {"Orb Dungeon","Spirit Curse"}
+        _G.AutoStoreItems = true
+        _G.RemoveEffect = true
+        _G.InviteParty = true
+        _G.AcceptParty = true
+    end
+end)
 loadstring(game:HttpGet('https://raw.githubusercontent.com/DevSoGod/All/main/RF-D'))()
