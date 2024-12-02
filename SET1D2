@@ -98,7 +98,7 @@ spawn(function()
                                 }
                             },
                             ["footer"] = {
-                                ["text"] = "Thank you for using Exclusive Hub Notify ❤️",
+                                ["text"] = "ประเทศไทยสู้ไม่สู้ Sort Hub",
                                 ["icon_url"] = "https://media.discordapp.net/attachments/1261364597424918629/1261950386554798191/03.png"
                             }
                         }}
