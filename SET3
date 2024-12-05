@@ -5,7 +5,7 @@ spawn(function()
         _G.AutoTrade = false
         _G.Stat = {"DevilFruit","Defense"}
         _G.AutoStat = true
-        _G.AutoRandom = true
+        _G.AutoRandom = false
         _G.AutoEquipWeapon = true
         _G.AutoSkill = true
         _G.AutoNUANG = true
