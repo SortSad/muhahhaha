@@ -10,7 +10,7 @@ spawn(function()
         _G.AutoSkill = true
         _G.AutoNUANG = true
         _G.AutoDungeon = true
-        _G.KeepItems = {}
+        _G.KeepItems = {"Spirit Curse"}
         _G.AutoStoreItems = true
         _G.RemoveEffect = true
         _G.InviteParty = false
