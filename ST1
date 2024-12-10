@@ -1,14 +1,14 @@
 _G.Password = "พี่หน่วงแบนผมทำไม"
 spawn(function()
     while task.wait() do
-        _G.ItemsTrade = {"Orb Dungeon","Rumble Fruit","Cursed Egg","Kfc Bag","Cursed Banana","Spirit Curse","Frog","Office Chair","Orb Broken","Orb Atomic","Finger Sukuna","Turbo Cat"}
-        _G.AutoTrade = false
+        _G.ItemsTrade = {"Orb Dungeon","Rumble Fruit","Cursed Egg","Kfc Bag","Cursed Banana","Spirit Curse","Frog","Office Chair","Orb Broken","Orb Atomic","Finger Sukuna","Turbo Cat","Washing Powder","Softener"}
+        _G.AutoTrade = true
         _G.Stat = {"DevilFruit","Defense"}
         _G.AutoStat = true
         _G.AutoRandom = false
         _G.AutoEquipWeapon = true
         _G.AutoSkill = true
-        _G.AutoNUANG = true
+        _G.AutoNUANG = false
         _G.AutoDungeon = true
         _G.KeepItems = {}
         _G.AutoStoreItems = true
