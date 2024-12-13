@@ -9,7 +9,7 @@ spawn(function()
         _G.AutoEquipWeapon = true
         _G.AutoSkill = true
         _G.AutoNUANG = true
-        _G.AutoDungeon = true
+        _G.AutoDungeon = false
         _G.KeepItems = {"Bacon","Orb Blue","Orb Red","Spirit Curse","Orb Shadow"}
         _G.AutoStoreItems = true
         _G.RemoveEffect = true
