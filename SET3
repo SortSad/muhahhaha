@@ -1,7 +1,7 @@
 _G.Password = "พี่หน่วงแบนผมทำไม"
 spawn(function()
     while task.wait() do
-        _G.ItemsTrade = {"Orb Shadow","Shadow Ring"}
+        _G.ItemsTrade = {"Orb Atomic","Shadow Ring"}
         _G.AutoTrade = true
         _G.Stat = {"DevilFruit","Defense"}
         _G.AutoStat = true
@@ -10,7 +10,7 @@ spawn(function()
         _G.AutoSkill = true
         _G.AutoNUANG = true
         _G.AutoDungeon = false
-        _G.KeepItems = {"Bacon","Orb Blue","Orb Red","Spirit Curse","Orb Shadow","Orb Atomic"}
+        _G.KeepItems = {"Bacon","Orb Blue","Orb Red","Spirit Curse","Orb Shadow"}
         _G.AutoStoreItems = true
         _G.RemoveEffect = true
         _G.InviteParty = false
