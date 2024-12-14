@@ -15,7 +15,7 @@ spawn(function()
         _G.RemoveEffect = true
         _G.InviteParty = true
         _G.AcceptParty = true
-        _G.ItemsHook = {"Shadow Ring","Orb Atomic"}
+        _G.ItemsHook = {"Shadow Ring"}
         _G.URL = "https://discord.com/api/webhooks/1317403529991815239/JKmCCr2BtugjCpgh5wlAnu1QEZJJK5M80sA-SOPkz-pg_dM5UtHJuQGUh8BdD5JafUdz"
         _G.Webhook = true
         _G.AutoCid = true
