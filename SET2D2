@@ -1,20 +1,24 @@
 _G.Password = "พี่หน่วงแบนผมทำไม"
 spawn(function()
     while task.wait() do
-        _G.ItemsTrade = {"Orb Dungeon","Rumble Fruit","Cursed Egg","Kfc Bag","Cursed Banana","Spirit Curse","Frog","Office Chair","Orb Broken","Orb Atomic","Finger Sukuna","Turbo Cat","Washing Powder","Softener"}
-        _G.AutoTrade = true
+        _G.ItemsTrade = {"Cursed Egg","Orb Atomic","Turbo Cat","Washing Powder","Softener","Shadow Ring"}
+        _G.AutoTrade = false
         _G.Stat = {"DevilFruit","Defense"}
         _G.AutoStat = true
         _G.AutoRandom = false
         _G.AutoEquipWeapon = true
         _G.AutoSkill = true
         _G.AutoNUANG = true
-        _G.AutoDungeon = true
-        _G.KeepItems = {"Orb Dungeon","Spirit Curse"}
+        _G.AutoDungeon = false
+        _G.KeepItems = {"Bacon","Orb Blue","Orb Red","Spirit Curse","Orb Shadow","Orb Atomic"}
         _G.AutoStoreItems = true
         _G.RemoveEffect = true
         _G.InviteParty = true
         _G.AcceptParty = true
+        _G.ItemsHook = {"Shadow Ring"}
+        _G.URL = "https://discord.com/api/webhooks/1317403529991815239/JKmCCr2BtugjCpgh5wlAnu1QEZJJK5M80sA-SOPkz-pg_dM5UtHJuQGUh8BdD5JafUdz"
+        _G.Webhook = true
+        _G.AutoCid = true
     end
 end)
 loadstring(game:HttpGet('https://raw.githubusercontent.com/DevSoGod/All/main/RF-D'))()
