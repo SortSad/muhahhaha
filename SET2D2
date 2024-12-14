@@ -2,7 +2,7 @@ _G.Password = "พี่หน่วงแบนผมทำไม"
 spawn(function()
     while task.wait() do
         _G.ItemsTrade = {"Orb Shadow","Shadow Ring"}
-        _G.AutoTrade = false
+        _G.AutoTrade = true
         _G.Stat = {"DevilFruit","Defense"}
         _G.AutoStat = true
         _G.AutoRandom = false
