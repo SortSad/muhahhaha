@@ -113,3 +113,12 @@ spawn(function()
         end,print)
     end
 end)
+
+spawn(function()
+    repeat wait() until game.Workspace.DistributedGameTime > 90
+    while wait() do
+        if tonumber(os.date("!*t").min) == 0 then
+            game.Players.LocalPlayer:Kick("You have been Kicked By Sort Hub")
+        end
+    end
+end)
