@@ -1,7 +1,13 @@
 _G.Out = true
 
 function OutInvOrb_Shadow()
-    if not game.Players.LocalPlayer.Backpack:FindFirstChild("Orb Atomic") and not workspace.Mob:FindFirstChild("Cid") and game.Players.LocalPlayer.Character and game.Players.LocalPlayer.Character.Humanoid.Health >= 1 then
+    -- ตรวจสอบให้แน่ใจว่า LocalPlayer และ Character ถูกต้อง
+    local player = game.Players.LocalPlayer
+    if not player or not player.Character or not player.Backpack then
+        return
+    end
+    
+    if not player.Backpack:FindFirstChild("Orb Atomic") and not workspace.Mob:FindFirstChild("Cid") and player.Character.Humanoid.Health >= 1 then
         local args = {
             [1] = "Orb Atomic"
         }
@@ -10,24 +16,23 @@ function OutInvOrb_Shadow()
         wait(0.5)
     end
 end
+
 task.spawn(function()
     while wait(1) do
-        pcall(function()
-            if _G.Out then
+        if _G.Out then
+            pcall(function()
                 OutInvOrb_Shadow()
-            end
-        end)
-        wait(5)
+            end)
+        end
     end
-end
+end)
 
-while wait(0.3) do
- local args = {
-    [1] = "fire",
-    [3] = "Crafting",
-    [4] = "Orb Atomic"
-}
+while wait(0.3) do  -- ปรับเวลาให้ยาวขึ้นจาก 0.3 เป็น 1 วินาที
+    local args = {
+        [1] = "fire",
+        [3] = "Crafting",
+        [4] = "Orb Atomic"
+    }
 
-game:GetService("ReplicatedStorage").Modules.NetworkFramework.NetworkEvent:FireServer(unpack(args))  
-
+    game:GetService("ReplicatedStorage").Modules.NetworkFramework.NetworkEvent:FireServer(unpack(args))
 end
