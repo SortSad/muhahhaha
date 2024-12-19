@@ -1,3 +1,26 @@
+_G.Out = true
+
+function OutInvOrb_Shadow()
+    if not game.Players.LocalPlayer.Backpack:FindFirstChild("Orb Atomic") and not workspace.Mob:FindFirstChild("Cid") and game.Players.LocalPlayer.Character and game.Players.LocalPlayer.Character.Humanoid.Health >= 1 then
+        local args = {
+            [1] = "Orb Atomic"
+        }
+        
+        game:GetService("ReplicatedStorage").Remotes.Inventory:FireServer(unpack(args))
+        wait(0.5)
+    end
+end
+task.spawn(function()
+    while wait(1) do
+        pcall(function()
+            if _G.Out then
+                OutInvOrb_Shadow()
+            end
+        end)
+        wait(5)
+    end
+
+
 while wait(0.3) do
  local args = {
     [1] = "fire",
@@ -7,4 +30,4 @@ while wait(0.3) do
 
 game:GetService("ReplicatedStorage").Modules.NetworkFramework.NetworkEvent:FireServer(unpack(args))  
 
-    end
+end
