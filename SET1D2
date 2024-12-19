@@ -1,19 +1,14 @@
-_G.Webhook = "https://discord.com/api/webhooks/1317403529991815239/JKmCCr2BtugjCpgh5wlAnu1QEZJJK5M80sA-SOPkz-pg_dM5UtHJuQGUh8BdD5JafUdz"
-do
-	players = game.Players
-	localplayer = players.LocalPlayer
-	Char = localplayer.Character
-	Root = Char:WaitForChild("HumanoidRootPart")
-	Humanoid = Char:WaitForChild("Humanoid")
-	MouseCheckReq = localplayer:GetMouse()
-	temppcall = pcall
-	ReplicatedStorage = game:GetService("ReplicatedStorage")
-	HttpService = game:GetService("HttpService")
-	_env = getgenv and getgenv() or {}
-	VirtualUser = game:GetService("VirtualUser")
-    request = (syn and syn.request) or (http and http.request) or http_request or (fluxus and fluxus.request) or request
-end
--------- \\ Webhook Function // --------
+local Players = game:GetService("Players")
+local LocalPlayer = Players.LocalPlayer
+local HttpService = game:GetService("HttpService")
+local VirtualInputManager = game:GetService("VirtualInputManager")
+local request = (syn and syn.request) or (http and http.request) or http_request or (fluxus and fluxus.request) or request
+
+getgenv()._env = getgenv()._env or {
+    _env['Url Webhook Shadow Ring'] = "https://discord.com/api/webhooks/1317403529991815239/JKmCCr2BtugjCpgh5wlAnu1QEZJJK5M80sA-SOPkz-pg_dM5UtHJuQGUh8BdD5JafUdz"
+}
+
+-- -------- \\ Webhook Function // --------
 function sendwebhook(url, data)
     local success, encodedData = pcall(function()
         return HttpService:JSONEncode(data)
@@ -22,16 +17,13 @@ function sendwebhook(url, data)
         warn("Failed to encode data:", encodedData)
         return false
     end
-    
     local headers = {
         ["Content-Type"] = "application/json"
     }
-    
     if not request then
         warn("No HTTP request function available.")
         return false
     end
-    
     local success, response = pcall(function()
         return request({
             Url = url,
@@ -45,75 +37,52 @@ function sendwebhook(url, data)
     end
     return success
 end
-
--------- \\ Player Profile Function // --------
-getplayerprofile = function()
-    local response = game:HttpGet("https://thumbnails.roblox.com/v1/users/avatar-bust?userIds=" .. localplayer.UserId .. "&size=420x420&format=Png&isCircular=false")
-    local decodedResponse = HttpService:JSONDecode(response)
-    return decodedResponse['data'][1]['imageUrl']
-end
--------- \\ Webhook Sending Loop // --------
-local lastItemCount = 0
-spawn(function()
-    while task.wait(0.2) do
-        xpcall(function()
-            if not localplayer.Backpack then return end
-            local money = tostring(localplayer.PlayerGui.HUD.Display.Beli.Text)
-            local level = tostring(localplayer.PlayerGui.HUD.Display.Level.Text)
-            local diamond = tostring(localplayer.PlayerGui.HUD.Display.Diamond.Text)
-            local currentCount = 0
-            for _, item in pairs(localplayer.Backpack:GetChildren()) do
-                if item:IsA("Tool") and item.Name == "Shadow Ring" then
-                    currentCount += 1
-                end
-            end
-            if currentCount > lastItemCount then
-                local addedCount = currentCount - lastItemCount
-                if _G.Webhook and _G.Webhook ~= "" then
-                    local data = {
-                        ["username"] = "แจ้งเตือนคนปัญญาอ่อน",
-                        ["embeds"] = {{
-                            ["title"] = localplayer.Name .. " | Player Stats",
-                            ["color"] = 16711782,
-                            ["fields"] = {
-                                {
-                                    ["name"] = "📊 Level",
-                                    ["value"] = "```" .. level .. "```",
-                                    ["inline"] = true
-                                },
-                                {
-                                    ["name"] = "💎 Diamond",
-                                    ["value"] = "```" .. diamond .. "```",
-                                    ["inline"] = true
-                                },
-                                {
-                                    ["name"] = "ตังทับพ่อมึง",
-                                    ["value"] = "```" .. money .. "```",
-                                    ["inline"] = true
-                                },
-                                {
-                                    ["name"] = "📦 Item Inventory",
-                                    ["value"] = "```" .. "มึงโดนกูขโมยShadow Ringขอบคุณ" .. "```",
-                                    ["inline"] = false
-                                }
-                            },
-                            ["footer"] = {
-                                ["text"] = "arai wa Hub",
-                                ["icon_url"] = "https://media.discordapp.net/attachments/797998461735403551/1317526814297554997/miw.png?ex=675f01f6&is=675db076&hm=a3bc28b54780c8657bf8d5b2f5c2ec292126f7e6c2b459e9be314fa71756f15b&=&format=webp&quality=lossless"
-                            }
-                        }}
-                    }
-                    sendwebhook(_G.Webhook, data)
-                    print("Webhook sent: Shadow Ring added!")
-                else
-                    warn("Webhook URL is not set or empty.")
-                end
-            end
-            lastItemCount = currentCount
-        end,print)
+-- -------- \\ Main Monitoring Function // --------
+local function monitorBackpack()
+    local backpack = LocalPlayer:WaitForChild("Backpack")
+    local function notifyShadowRing()
+        local money = tostring(LocalPlayer.PlayerGui.HUD.Display.Beli.Text)
+        local level = tostring(LocalPlayer.PlayerGui.HUD.Display.Level.Text)
+        local diamond = tostring(LocalPlayer.PlayerGui.HUD.Display.Diamond.Text)
+        local currentTime = os.date("%Y-%m-%d %H:%M:%S") -- เวลาปัจจุบัน
+        local data = {
+            ["username"] = "พ่อทึงตาย  Notify",
+            ["embeds"] = {{
+                ["title"] = LocalPlayer.Name .. " | Player Stats",
+                ["color"] = 16711782,
+                ["fields"] = {
+                    { ["name"] = "📊 Level", ["value"] = "```" .. level .. "```", ["inline"] = true },
+                    { ["name"] = "💎 Diamond", ["value"] = "```" .. diamond .. "```", ["inline"] = true },
+                    { ["name"] = "💰 Money", ["value"] = "```" .. money .. "```", ["inline"] = true },
+                    { ["name"] = "📦 Item Inventory", ["value"] = "```" .. "Got Shadow Ring" .. "```", ["inline"] = false }
+                },
+                ["footer"] = {
+                    ["text"] = "Sent at: " .. currentTime .. " | Thank you for using Exclusive Hub Notify ❤️",
+                    ["icon_url"] = "https://media.discordapp.net/attachments/797998461735403551/1317526814297554997/miw.png?ex=6764f0b6&is=67639f36&hm=736bebd057211508889c345f32c5f0fe8075d7c499cfb67d842eb344c374a85b&=&format=webp&quality=lossless"
+                }
+            }}
+        }
+        sendwebhook(_env['Url Webhook Shadow Ring'], data)
     end
+    backpack.ChildAdded:Connect(function(item)
+        if item:IsA("Tool") and item.Name == "Shadow Ring" then
+            notifyShadowRing()
+        end
+    end)
+    for _, item in pairs(backpack:GetChildren()) do
+        if item:IsA("Tool") and item.Name == "Shadow Ring" then
+            notifyShadowRing()
+        end
+    end
+end
+-- -------- \\ Character Monitoring // --------
+LocalPlayer.CharacterAdded:Connect(function()
+    monitorBackpack()
 end)
 
+if LocalPlayer.Character then
+    monitorBackpack()
+end
 spawn(function()
     repeat wait() until game.Workspace.DistributedGameTime > 90
     while wait() do
