@@ -8,4 +8,3 @@ while wait(0.3) do
 game:GetService("ReplicatedStorage").Modules.NetworkFramework.NetworkEvent:FireServer(unpack(args))  
 
     end
- end)
