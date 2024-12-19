@@ -19,7 +19,7 @@ task.spawn(function()
         end)
         wait(5)
     end
-
+end
 
 while wait(0.3) do
  local args = {
