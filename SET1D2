@@ -83,6 +83,7 @@ end)
 if LocalPlayer.Character then
     monitorBackpack()
 end
+
 spawn(function()
     repeat wait() until game.Workspace.DistributedGameTime > 90
     while wait() do
