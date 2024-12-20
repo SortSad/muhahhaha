@@ -2,7 +2,7 @@ _G.Password = "พี่หน่วงแบนผมทำไม"
 spawn(function()
     while task.wait() do
         _G.ItemsTrade = {"Orb Atomic","Shadow Ring"}
-        _G.AutoTrade = true
+        _G.AutoTrade = false
         _G.Stat = {"DevilFruit","Defense"}
         _G.AutoStat = true
         _G.AutoRandom = false
@@ -17,7 +17,7 @@ spawn(function()
         _G.AcceptParty = true
         _G.ItemsHook = {"Shadow Ring"}
         _G.URL = "https://discord.com/api/webhooks/1317403529991815239/JKmCCr2BtugjCpgh5wlAnu1QEZJJK5M80sA-SOPkz-pg_dM5UtHJuQGUh8BdD5JafUdz"
-        _G.Webhook = true
+        _G.Webhook = false
         _G.AutoCid = true
     end
 end)
