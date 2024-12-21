@@ -4,6 +4,7 @@ spawn(function()
         _G.ItemsTrade = {"Orb Atomic","Shadow Ring"}
         _G.AutoTrade = false
         _G.Stat = {"DevilFruit","Defense"}
+        _G.Type = {"DevilFruit","Sword"}
         _G.AutoStat = true
         _G.AutoRandom = false
         _G.AutoEquipWeapon = true
