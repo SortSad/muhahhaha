@@ -1,22 +1,27 @@
-_G.Password = "พี่หน่วงแบนผมทำไม"
-spawn(function()
-    while task.wait() do
-        _G.ItemsTrade = {"Orb Atomic","Shadow Ring"}
-        _G.AutoTrade = false
-        _G.Stat = {"DevilFruit","Defense"}
-        _G.Type = {"DevilFruit","Sword"}
-        _G.AutoStat = true
-        _G.AutoRandom = false
-        _G.AutoEquipWeapon = true
-        _G.AutoSkill = true
-        _G.AutoNUANG = false
-        _G.AutoDungeon = false
-        _G.KeepItems = {"Bacon","Orb Blue","Orb Red","Spirit Curse","Orb Shadow","Orb Atomic"}
-        _G.AutoStoreItems = true
-        _G.RemoveEffect = true
-        _G.InviteParty = true
-        _G.AcceptParty = true
-        _G.AutoCid = true
-    end
-end)
-loadstring(game:HttpGet('https://raw.githubusercontent.com/DevSoGod/All/main/RF-D'))()
+getgenv()._env = {
+    ---- \\ Settings // ----
+    ['Weapon'] = {"DevilFruit"}, -- {"Melee","Sword","DevilFruit","Special"},
+    ['Select Ignore Item'] = {"Bacon","Shiny Banana","Orb Blue","Orb Red","Orb Christmas"},
+    ['KeyCode'] = {"z","x","c","v","f"},
+    ['Method'] = "Over",
+    ['Select Accessory'] = "WhySoSerious",
+    ---- \\ Store Item // ----
+    ['Automatic Store Item'] = true,
+    ---- \\ Event Christmas  // ----
+    ['Automatic Devil Santa'] = true,
+    ---- \\ Dungeon // ----
+    ['Automatic Out Orb Dungeon'] = false, -- Auto Out Orb Atomic From Inventory
+    ['Automatic Fully Dungeon'] = false,
+    ---- \\ Party // ----
+    ['Automatic Create Party And Invite'] = true,
+    ['Automatic Accept'] = true,
+    ---- \\ SKILL // ----
+    ['Automatic SKILL'] = true,
+    ---- \\ Stats // ----
+    ['Slider Point'] = 10000,
+    ['Select Stats'] = {"Melee","Sword","DevilFruit","Special","Defense"},
+    ['Automatic Up Stats'] = true,
+}
+_G.Key = "ALLMAP-LKWEO-DZ1HN"
+_G.DiscordId = "597362903582244883"
+loadstring(game:HttpGet("https://raw.githubusercontent.com/SecretReal/Secret/refs/heads/main/"..game.GameId))();
