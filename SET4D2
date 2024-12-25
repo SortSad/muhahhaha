@@ -1,38 +1,10 @@
-_G.Out = true
-
-function OutInvOrb_Shadow()
-    -- ตรวจสอบให้แน่ใจว่า LocalPlayer และ Character ถูกต้อง
-    local player = game.Players.LocalPlayer
-    if not player or not player.Character or not player.Backpack then
-        return
-    end
-    
-    if not player.Backpack:FindFirstChild("Orb Atomic") and not workspace.Mob:FindFirstChild("Cid") and player.Character.Humanoid.Health >= 1 then
-        local args = {
-            [1] = "Orb Atomic"
-        }
-        
-        game:GetService("ReplicatedStorage").Remotes.Inventory:FireServer(unpack(args))
-        wait(0.5)
-    end
-end
-
-task.spawn(function()
-    while wait(1) do
-        if _G.Out then
-            pcall(function()
-                OutInvOrb_Shadow()
-            end)
-        end
-    end
-end)
-
 while wait(0.3) do  -- ปรับเวลาให้ยาวขึ้นจาก 0.3 เป็น 1 วินาที
     local args = {
-        [1] = "fire",
-        [3] = "Crafting",
-        [4] = "Orb Atomic"
-    }
+      local args = {
+    [1] = "fire";
+    [3] = "buy_christmas_gift";
+    [4] = "Secret";
+}
 
-    game:GetService("ReplicatedStorage").Modules.NetworkFramework.NetworkEvent:FireServer(unpack(args))
+game:GetService("ReplicatedStorage"):WaitForChild("Modules", 9e9):WaitForChild("NetworkFramework", 9e9):WaitForChild("NetworkEvent", 9e9):FireServer(unpack(args))
 end
